@@ -1,0 +1,4 @@
+Author: Kirill Podoprigora
+Created at: 2025-11-20 15:49
+Number: 164
+Clean content: Jelle Zijlstra: The concrete suggestion is base64 , which is currently fully in Python. In fact, base64 is built on top of the binascii module, which is implemented entirely in C. So I think you’re right, we can try replacing the current binascii implementation with a Rust-based one.

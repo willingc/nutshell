@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-20 22:55
+Number: 186
+Clean content: Brénainn Woodsend: Slightly tangential but I find optional stdlib components to be a menace and would really like their proliferation to be minimised. I have heard from a number of people a similar sentiment. I think therefore it’d be best if a new Rust module was a replacement for an existing C module that could act as a fallback, rather than an entirely new module with no fallback.

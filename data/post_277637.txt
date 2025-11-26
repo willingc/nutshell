@@ -1,0 +1,7 @@
+Author: David Hewitt
+Created at: 2025-11-18 13:24
+Number: 89
+Clean content: dimaqq: Rust’s approach to memory safety in multithreaded programs is very different from Python’s. From subinterpreters, yes I agree there are differences. From freethreaded Python, it has so far felt very similar to me (atomic datatypes, locks etc). dimaqq: This is just rust for the sake of rust. A safe C equivalent would be two lines long. This code could be written in a one liner if really wanted, I wouldn’t pick at LOC as a relevant metric. Some Rust code is more verbose than C because it encourages checking, some Rust code is less verbose because it (e.g.) handles RAII for you. #[inline]
+fn encoded_output_len(input_len: usize) -> Option<usize> {
+    (input_len.checked_add(2)? / 3).checked_mul(4)
+}

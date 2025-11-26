@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-20 05:10
+Number: 152
+Clean content: Git 3 is bringing in support for SHA256 commit hashes, which is a protocol break. (From what I remember, Rust is used to write the part which allows seamless SHA1 → SHA256 transitioning within a repo.)

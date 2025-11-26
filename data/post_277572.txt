@@ -1,0 +1,4 @@
+Author: Éric Araujo
+Created at: 2025-11-18 02:29
+Number: 58
+Clean content: Hi, Dmitry: this would open the door for the possibility of shipping with Python modern Rust-based tooling for dep management, formatting and linting Can you expand on this with some specific examples? I can only interpret this as a suggestion that Python releases would include uv and ruff, and it doesn’t make much sense to me. These projects already exist, their adoption does not depend on CPython using Rust itself. And formatters and linters are third-party projects, not developed by python-dev, and chosen by developers. One thing with special status is pip, included via ensurepip, to solve the packaging boostrapping issue.

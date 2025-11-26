@@ -1,0 +1,4 @@
+Author: Brett Cannon
+Created at: 2025-11-20 00:22
+Number: 149
+Clean content: Alyssa Coghlan: long tail platform support concerns FYI Git 2.52 now optionally uses Rust and it will be required in Git 3 . Zander: introducing Rust into CPython may inevitably lead to some divergence within the community Divergence how? The key people who would be affected by this are: Core developers People who build CPython from source But as has already been stated, the PEP will have Rust usage be optional, so really, the people who will be affected by the planned PEP are: Core developers And so far I have seen more +1 than -1 from core developers. Paul Moore: If the launcher had been written in Rust GitHub - brettcannon/python-launcher: Python launcher for Unix (although admittedly I’m now curious to see if Python performance is such that I can just do it in pure Python and package it up appropriately).

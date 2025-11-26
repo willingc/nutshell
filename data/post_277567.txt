@@ -1,0 +1,4 @@
+Author: William Woodruff
+Created at: 2025-11-18 02:04
+Number: 56
+Clean content: Brénainn Woodsend: Will the binaries written in rust be able to share a single copy of dependencies and/or the rust runtime? My recollection is that ABI in rust is a forgotten dream Rust has no problem using the C ABI; from experience, the norm when integrating Rust into existing C codebases is retain existing ABI boundaries and perform dynamic linking in the same ways that the codebase would normally. (There’s a separate issue, which is that fully separate Rust builds tend to prefer static linkage because there’s no stable Rust ABI. But the integration efforts of Chrome, Firefox, etc. are good examples of integration of Rust components into projects that assume the C/C++ ABIs.)

@@ -1,0 +1,4 @@
+Author: Guido van Rossum
+Created at: 2025-11-17 19:06
+Number: 12
+Clean content: Snarky note: do we eventually have to rename CPython to CRPython? Seriously, I think this is a great development. We all know that a full rewrite in Rust won’t work, but starting to introduce Rust initially for less-essential components, and then gradually letting it take over more essential components sounds like a good plan. I trust Emma and others to do a great job of guiding the discussion over the exact shape that the plan and the implementation should take.

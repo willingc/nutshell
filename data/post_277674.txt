@@ -1,0 +1,4 @@
+Author: Norman Lorrain
+Created at: 2025-11-18 18:16
+Number: 105
+Clean content: I think in terms of a tech stack, as you go further down you want to be increasingly conservative and prevent any breaking changes.  This has been the success of Windows, which for all it’s faults is quite backward compatible.  I can take code from 30 years ago and it will run.  Similarly for the Web.  I can look at archived pages from decades ago and it will display. Python is the foundation for many projects and businesses.  I trust that code I write today will run in 1 or 2 or 5 years.  10 years, less trust. Lessons learned from 2to3 transition. In turn, C is the foundation of Python.  I trust that any changes to C will not impact Python and my investment of time, etc. won’t be at risk. The core issue is trust. There is “currency” in trust.  Python has a healthy bank account of trust, and I fear it will be at risk.

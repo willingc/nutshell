@@ -1,0 +1,4 @@
+Author: Da Woods
+Created at: 2025-11-20 22:05
+Number: 183
+Clean content: emmatyping: To define a module, we need to have some way of defining a PyModuleDef, unless we want to introduce a new module initialization protocol (which is a large proposal in of itself). Therefore we need a pointer to a PyModuleDef, which needs it’s first member to be PyModuleDef_HEAD_INIT which internally expands to a structure with it’s first member being PyObject_HEAD_INIT. So some of this coupling is necessary as part of the module initialization protocol. I think PEP 793 would disagree with this and probably be simpler from a Rust point of view because it doesn’t involve C macros (although that wasn’t the specific intent of it). (No comment on the larger context of the discussion…. just the specific paragraph)

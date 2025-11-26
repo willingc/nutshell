@@ -1,0 +1,4 @@
+Author: Jakub Beránek
+Created at: 2025-11-18 14:07
+Number: 93
+Clean content: To provide some numbers on Rust’s build performance: today, I can build the whole Rust compiler (600 kLOC) plus its ~200 dependencies (a couple more hundred kLOC) on my Zen3 16 core (8C+8HT) laptop in ~50s from scratch, in release mode with optimizations, with incremental rebuilds taking 5-20s (depending on how deep I modify something in the dependency tree). While that is still slower than rebuilding CPython, especially in incremental, I don’t think that the initiative mentioned in this PEP would run into Rust build time performance issues soon, unless you somehow manage to write (or depend on) hundreds thousands of Rust code very quickly.

@@ -1,0 +1,4 @@
+Author: Antoine Pitrou
+Created at: 2025-11-21 11:59
+Number: 191
+Clean content: Emma Smith: PyO3 already has 8 years of experience for us to steal re-use refining their APIs. You probably meant “borrow”.

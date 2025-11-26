@@ -1,0 +1,4 @@
+Author: Norman Lorrain
+Created at: 2025-11-18 18:40
+Number: 111
+Clean content: Maybe a standardisation to the effect that code from The Rust book, 1st edition, or 2nd edition, still work with the latest Rust. (Perhaps it does).

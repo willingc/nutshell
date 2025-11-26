@@ -1,0 +1,4 @@
+Author: Antoine Pitrou
+Created at: 2025-11-18 11:24
+Number: 83
+Clean content: David Hewitt: I spoke to some of the Miri maintainers about running PyO3 through Miri a while ago, I believe back then there were limitations due to all the C FFI being opaque to Miri. I vaguely recall the conversation concluded those limitations could be lifted, would just need some work. I’m not aware of anything to make me think that work has been done yet. And conversely, would a ASAN/UBSAN build of CPython be able to see/instrument the Rust parts? Otherwise, not seeing the full program execution could impair the ability of the instrumentation to find bugs at runtime.

@@ -1,0 +1,4 @@
+Author: Marc-André Lemburg
+Created at: 2025-11-18 11:07
+Number: 81
+Clean content: I’m a firm -1 on proceeding in this direction. The reference implementation CPython is called CPython for a reason, after all, By adding additional requirements, we make CPython less portable, maintenance a lot harder and complicate adoption in spaces where you need to recompile the whole package to other platforms such as WASM. Besides, there already is a GitHub - RustPython/RustPython: A Python Interpreter written in Rust effort. I’m sure they’d love to get more support. If you want to use Rust for writing optional extensions, that’s perfectly fine, but please upload them to PyPI instead of requiring Rust in the CPython core.

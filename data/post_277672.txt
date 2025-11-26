@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-18 18:08
+Number: 103
+Clean content: The distinction is that those are implemented using I-unsound -tagged bugs in the compiler (and no comparably advanced optimizing compiler is completely free of them) and the underlying formal proof is for “if all compiler bugs are fixed”… similar to how you shouldn’t fault a language for the underlying DRAM being susceptible to Rowhammer . I don’t have the URLs on hand, but, if I remember correctly, GCC and LLVM have equivalent tags in their bug trackers. In this context, the reason some of those bugs are long-lived is twofold: The developers have determined that they’re very difficult to encounter accidentally. Neither the rustc devs nor the LLVM devs nor the GCC devs nor any developers of optimizing compilers are willing to take on “this transformation is a security boundary, fit for processing mailcious inputs”-level responsibility.

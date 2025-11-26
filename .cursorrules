@@ -1,0 +1,4 @@
+<!-- .cursorrules -->
+Docstrings should be in numpy format.
+Testing framework should be pytest.
+Type hints should be required.

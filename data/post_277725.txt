@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-19 04:03
+Number: 129
+Clean content: I claim that one of the major reasons for this failure is that cargo is almost unique among build systems in providing absolutely no structured mechanisms for: (1) communicating with other package build scripts in the same dependency graph (2) communicating with the downstream user who invokes cargo (such as a distro packager, or a github actions pipeline) An update on work in this direction: The GSoC results page details progress on Prototype Cargo Plumbing Commands . Not what you asked for, but evidence of how this sort of thing is on the radar.

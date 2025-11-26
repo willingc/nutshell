@@ -1,0 +1,4 @@
+Author: Josh Cannon
+Created at: 2025-11-18 11:49
+Number: 84
+Clean content: barry: One of the soft consequences I’m especially interested in is whether this attracts more or fewer core developers contributing to the Rust bits than the C bits. Anecdata: I don’t plan on writing any (more) C code, so outside of all the non-coding ways that exist, I don’t see myself ever meaningfully becoming a contributor to CPython (‘s core). On the other hand, I can’t write enough Rust to scratch the itch. And I don’t think I’m particularly unique or special here

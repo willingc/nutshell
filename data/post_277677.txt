@@ -1,0 +1,4 @@
+Author: Norman Lorrain
+Created at: 2025-11-18 18:27
+Number: 107
+Clean content: See my other answer, regarding trust.  Having a standard provides some measure of trust in a technology that is a foundation of a project. I know nothing about Android, but I read that Ubuntu had a problematic release with their porting of uutils/coreutils to Rust in 25.10.  Those tools are a foundation to a Linux system. This undermines trust in Ubuntu. I’d hate for the same to happen to Python.

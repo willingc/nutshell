@@ -1,0 +1,4 @@
+Author: Antoine Pitrou
+Created at: 2025-11-17 18:48
+Number: 11
+Clean content: Emma Smith: Eventually safe abstractions to simplify and standardize code like module definitions, function argument parsing, and class definitions could be adopted to reduce the amount of raw FFI code written. A reference implementation which includes a proof-of-concept _base64 module which uses Rust to provide a speedup to base64 is available. This example shows that you really want the safe abstractions for this to be useful. Otherwise you’re doing the same kind of tedious, unsafe, error-prone low-level pointer juggling and manual reference cleanup as in C (hello Py_DecRef ).

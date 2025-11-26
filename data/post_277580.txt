@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-18 04:13
+Number: 60
+Clean content: Éric Araujo: monk-time: this would open the door for the possibility of shipping with Python modern Rust-based tooling for dep management, formatting and linting Can you expand on this with some specific examples? I can only interpret this as a suggestion that Python releases would include uv and ruff, and it doesn’t make much sense to me. Yeah on a re-read I think my earlier comment misinterpreted this message as discussing clippy and rustfmt (Rust tools). So I would say adding Python tooling that is written in Rust to CPython is out of scope for this proposal.

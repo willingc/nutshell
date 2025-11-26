@@ -1,0 +1,4 @@
+Author: Steve Dower
+Created at: 2025-11-20 15:26
+Number: 163
+Clean content: Antoine Pitrou: I don’t think it would be the case. Everywhere you have a C compiler, you probably have a C++ compiler too. I agree, but I’m trying to be generous here We already have an (optional) C++ extension module in the stdlib, but don’t tell anyone.

@@ -1,0 +1,4 @@
+Author: Antoine Pitrou
+Created at: 2025-11-20 15:17
+Number: 160
+Clean content: Jelle Zijlstra: So for this proposal to be accepted, I feel there must be a clear path towards making it possible to replace existing C code with Rust, even if that means making Rust required. IMHO that “clear path” must be conditioned on the bootstrap issues being solved. As in: bootstrapping CPython-with-Rust should not be harder than bootstrapping CPython-without-Rust. Once that happens, them I’m fully +1 for Rust in CPython, including core parts.

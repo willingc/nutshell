@@ -1,0 +1,4 @@
+Author: Sam James
+Created at: 2025-11-18 18:47
+Number: 114
+Clean content: Basically, so long as you’re not depending on a compiler bug or security hole, the only thing which should be allowed to break vN code in any later vN+M version of the Rust compiler is the occasional change to how type inference works in edge cases. Use of unstable features in crates is more common than I’d like it to be still, and the promise does not apply to that. CPython should avoid any use of them. Rust for Linux currently relies on some such features, though they’re making an effort to stabilise the ones they’re relying on and not introduce more.

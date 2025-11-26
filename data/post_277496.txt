@@ -1,0 +1,4 @@
+Author: Chris Angelico
+Created at: 2025-11-17 19:18
+Number: 15
+Clean content: Guido van Rossum: Snarky note: do we eventually have to rename CPython to CRPython? I would strongly advise against that, on account of people inserting an “A” into it More seriously though: Rust has been a focus for a lot of controversy and risk, with massive open questions such as the impact of a potential Ken Thompson style compiler hack . Will CPython lose trust by becoming dependent on a single specific compiler that might be subject to such a hack? Currently, CPython can be compiled using multiple different compilers (I believe gcc, clang, and MSVC are all supported - correct me if I’m wrong?), which mitigates the threat by allowing them to check each other. Adding Rust to the mix will mean that, on every platform, the same Rust compiler MUST be used.

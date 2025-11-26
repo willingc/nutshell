@@ -1,0 +1,4 @@
+Author: Steve Dower
+Created at: 2025-11-17 22:33
+Number: 42
+Clean content: Guido van Rossum: Steve, without more details your -1 has no weight I’m aware. Happy to chat more with the people interested in driving this forward or evaluating/deciding on it, but there are more than enough opinions here already and I don’t see mine helping drive the discussion forward in any particularly meaningful way (especially given the response to my “keep it contained” concern was “actually, we’re going to make it less contained”).

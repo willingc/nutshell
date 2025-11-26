@@ -1,0 +1,4 @@
+Author: James Gerity
+Created at: 2025-11-17 21:41
+Number: 30
+Clean content: emmatyping: Hm, what adjustment did you have in mind? Nothing in particular. PEP 11’s requirements for each tier’s support are broad enough (language-agnostic enough) that it’s very possible that no changes are required, but I did raise my eyebrows at the intersection with Rust’s own support tiers.

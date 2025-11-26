@@ -1,0 +1,4 @@
+Author: Ricardo Robles
+Created at: 2025-11-19 08:53
+Number: 134
+Clean content: I’m not a Rust expert; I only have work experience with C/C++ and Python. What advantages would Rust have over other languages ​​like Go? I’m just asking to understand Rust’s advantages and to make sure it’s for a real reason and not just to “Rustify” everything.

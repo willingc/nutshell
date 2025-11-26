@@ -1,0 +1,4 @@
+Author: Elchanan Haas
+Created at: 2025-11-18 20:20
+Number: 119
+Clean content: emmatyping: When should Rust be allowed in non-optional parts of CPython? I think the timeline you are laying out here is a bit too certain. I would instead propose a timeline based on the adaption of Rust within Python. In Python 3.15, ./configure will start emitting warnings if Rust is not available in the environment. Optional extension modules may start using Rust. (Same as PEP proposal) Once the Rust has enough usage within Python extensions a PEP will be created with a timeline of making Rust mandatory.

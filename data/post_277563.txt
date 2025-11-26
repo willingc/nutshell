@@ -1,0 +1,4 @@
+Author: Neil Schemenauer
+Created at: 2025-11-18 01:19
+Number: 53
+Clean content: Alex Gaynor: Something like the GC is at the absolute nadir of the value of Rust: it inevitably requires a decent amount of unsafe and won’t benefit from Rust’s other advantages. Based on my recent experience in adding hardware prefetch to the free-threaded GC, I feel like writing in Rust could have provided some good benefit.  For example, implementing the gc_span_stack_t data structure and associated methods would have been easier to write and to review.  I would expect that it also would have prevented this memory leak bug in that code.

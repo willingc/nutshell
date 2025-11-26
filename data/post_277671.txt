@@ -1,0 +1,4 @@
+Author: Kirill Podoprigora
+Created at: 2025-11-18 17:56
+Number: 102
+Clean content: That’s a good question! But I guess the real question here is: what problem does standardization actually solve? Android and Linux seem to be doing just fine with Rust, even though it doesn’t have a formal standard. Here’s an article from Mara (a member of the Rust Leadership Council) that discusses this topic: https://blog.m-ou.se/rust-standard/ .

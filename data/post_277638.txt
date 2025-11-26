@@ -1,0 +1,4 @@
+Author: David Hewitt
+Created at: 2025-11-18 13:26
+Number: 90
+Clean content: dimaqq: The moral is that not all valid rust code belongs to CPython, just like PEP-7, there needs to be a spec about what rust features and idioms to use and what not to. clippy and rustfmt are fantastic tools (configurable) that enable a common standard of Rust to be used widely across the ecosystem with specific tailoring possible. I would think these will be great (possibly sufficient) starting points.

@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-18 18:31
+Number: 109
+Clean content: Personally, my trust in Python was broken as soon as I saw lines in the standard library docs saying things like Deprecated since version 3.6, removed in version 3.12. (Specifically the latter half.) It’s one of the things that made me feel relieved that I’d decided to work on a Rust rewrite for any code that doesn’t need memory-safe QWidget bindings, Django’s ecosystem, or Django ORM/Alembic draft migration autogeneration in order to minimize the “It works. Don’t **** with it” vs. “Burned myself out again trying to reinvent a stronger type system in my test suite” factor.

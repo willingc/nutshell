@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-17 22:08
+Number: 35
+Clean content: Is any language really safe from this? Surely gcc alone is a hugely valuable target for such an attack–how do we know it hasn’t happened? Heck, how do we know it hasn’t happened in CPython ? It seems like this is a separate security discussion that goes far beyond Rust.

@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-18 21:24
+Number: 124
+Clean content: Emma Smith: This is no longer the current plan, please see Pre-PEP: Rust for CPython - #117 by emmatyping Given that this thread reached 100+ posts in a day (!), you might want to edit the OP to make this clear. This thread is getting some broader coverage and I expect more people will be jumping in without reading the whole thing.

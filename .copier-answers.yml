@@ -1,0 +1,13 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 2025.11.10-5-g52b3bca
+_src_path: gh:scientific-python/cookie
+backend: hatch
+docs: mkdocs
+email: willingc@gmail.com
+full_name: Carol Willing
+license: MIT
+org: willingc
+project_name: discourse-to-sqlite
+project_short_description: Query Discourse and save results in SQLite
+url: https://github.com/willingc/discourse-to-sqlite
+vcs: true

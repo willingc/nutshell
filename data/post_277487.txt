@@ -1,0 +1,4 @@
+Author: Michael H
+Created at: 2025-11-17 17:31
+Number: 8
+Clean content: I would feel more comfortable with this if it was dependent on custom json targets stabilizing in Rust. Right now, targetting platforms that Rust itself doesn’t support still requires nightly, and python is used to bootstrap a lot of things in a lot of places. I don’t think the impact of this is going to be reasonably predictable, and I’d want there to be a stable upstream escape hatch for those in unusual situations.

@@ -1,0 +1,4 @@
+Author: Steven Sun
+Created at: 2025-11-17 21:07
+Number: 27
+Clean content: In my previous job, I developed and maintained a large codebase mixing C++, Python, and Rust. I am very familiar with these 3 languages. You can notify me if new Rust code or docs requires review. I support if we can start with some extensions with C/Python fallback. Based on my experience, I want to highlight that certain common practice do not align with Rust. For example, fork() is not usable for many Rust libraries (states may be incorrect after fork). https://stackoverflow.com/questions/60686516/why-cant-i-communicate-with-a-forked-child-process-using-tokio-unixstream

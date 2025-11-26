@@ -1,0 +1,4 @@
+Author: Alex Gaynor
+Created at: 2025-11-18 17:53
+Number: 101
+Clean content: Python is also not standardized, and yet I don’t think any of us believe it follows that it’s premature to use it . Can you expand a bit more on why you think standardization should play into this?

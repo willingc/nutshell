@@ -1,0 +1,4 @@
+Author: Norman Lorrain
+Created at: 2025-11-18 17:37
+Number: 100
+Clean content: Given that Rust isn’t standardised like C and C++ (ISO/IEC 9899, ISO/IEC 14882), isn’t this premature?

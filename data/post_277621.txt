@@ -1,0 +1,4 @@
+Author: Jacopo Abramo
+Created at: 2025-11-18 11:19
+Number: 82
+Clean content: Members of both the RustPython community and PyO3 already expressed their interest in this approach, as already pointed out from the previous replies on this thread.

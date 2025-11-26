@@ -1,0 +1,9 @@
+Author: Jeong, YunWon
+Created at: 2025-11-20 08:27
+Number: 155
+Clean content: emmatyping: Interactions between Python objects and borrows is rather complicated. I don’t think this thread is a great place to go over detailed API design discussion as that isn’t the goal of the PEP, but I’d be happy to chat in another forum like the Python Discord or via DM. I will say a pie-in-the-sky API will look somewhat like an implementation using PyO3 . A sample clone in RustPython; it is not PyO3 though. The technical details will differ, but once Rust for CPython gains sufficient abstraction, it will reach a similar level in terms of cognitive load. github.com/youknowone/RustPython _base64 main ← _base64 opened 08:08AM - 20 Nov 25 UTC youknowone +87 -0 ## Summary by CodeRabbit
+
+* **New Features**
+  * Base64 encoding support is now … available in the standard library. Users can encode binary data into standard Base64 format with built-in error handling and safety guarantees for large datasets. This enables reliable and efficient data transformation for applications requiring text-safe data representation and enhanced cross-platform system compatibility.
+
+<sub>✏️ Tip: You can customize this high-level summary in your review settings.</sub>

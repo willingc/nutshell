@@ -1,0 +1,4 @@
+Author: Jeong, YunWon
+Created at: 2025-11-18 00:02
+Number: 46
+Clean content: People still remember the huge drama from early 2025, but I think we should pay more attention to what Torvalds and Greg K-H recently said at the Open Source Summit Korea just two weeks ago. So, so that’s that’s one thing that has changed for me is that I actually feel like sometimes I need to encourage some of the other maintainers to be more open to to new ideas. If we want to bring up Rust for Linux as an example, we should not only talk about how introducing a new and unfamiliar idea can create conflict among existing maintainers, but also emphasize that leadership plays a role in encouraging the community to embrace such changes.

@@ -1,0 +1,4 @@
+Author: Kirill Podoprigora
+Created at: 2025-11-17 16:32
+Number: 3
+Clean content: Hello, and thanks for your question! We will try to make this transition as smooth as possible. We’re planning to write a “migration guide” for CPython contributors to help make their adoption of Rust as easy as possible. Can this scare current maintainers? Yes. Will we do everything we can to make sure it doesn’t? Absolutely.

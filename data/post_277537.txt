@@ -1,0 +1,4 @@
+Author: Guido van Rossum
+Created at: 2025-11-17 22:31
+Number: 40
+Clean content: steve.dower: Then you force me to factor in my experience in Rust, my experience in mixed-language codebases, and my experience in teams, and come down as a firm -1 on the entire proposal. Steve, without more details your -1 has no weight. You can’t just argue from authority .

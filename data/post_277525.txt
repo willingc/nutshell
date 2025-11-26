@@ -1,0 +1,4 @@
+Author: Paul Moore
+Created at: 2025-11-17 22:00
+Number: 33
+Clean content: Chris Angelico: Right now, how can we trust rust? How can we know that a Ken Thompson-style hack hasn’t already been done? How do we ensure that one won’t happen in the future? These are not merely academic questions. It seems to me that adoption of Rust for various other core system components offers some level of assurance here. While there are still risks, it seems likely that they would be discovered relatively quickly as Rust adoption increases. Particular cases I’m thinking of include: Rust in the Linux kernel The Rust reimplementation of coreutils being adopted for Ubuntu Microsoft including Rust in the Windows kernel While the risk involved in a single compiler implementation remains, the chance of detecting any consequent compromise seems like it’s going to rapidly decrease as projects like the above become more widespread.

@@ -1,0 +1,4 @@
+Author: Steve Dower
+Created at: 2025-11-17 20:55
+Number: 25
+Clean content: Emma Smith: We’d eventually like to make Rust a hard dependency so it can be used to improve the implementation of the Python runtime as well. Then you force me to factor in my experience in Rust, my experience in mixed-language codebases, and my experience in teams, and come down as a firm -1 on the entire proposal.

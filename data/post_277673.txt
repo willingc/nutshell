@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-18 18:15
+Number: 104
+Clean content: Rust has multiple mechanisms for building without access to Crates.io , depending on the specific circumstances. For example: cargo fetch and cargo build --offline can be used to separate the downloading and building while otherwise using Cargo the same way. cargo vendor can be used to vendor the dependencies without losing the information that something like cargo-audit would need. The Overriding Dependencies section of the Cargo Book covers things like overriding the Crates.io repository URL to locally point a package at a different source. While I haven’t kept up on the state of the art, it’s possible to run a local mirror of Crates.io more broadly using tools like Panamax . I think that covers all the major tiers of the problem.

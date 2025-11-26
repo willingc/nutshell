@@ -1,0 +1,4 @@
+Author: Jelle Zijlstra
+Created at: 2025-11-20 20:04
+Number: 170
+Clean content: Emma Smith: I think on the contrary we will see the greatest benefits for memory safety from making new code in Rust. A usenix paper found that the majority of vulnerabilities are in new code, as older code is battle-tested. While most vulnerabilities may be in new code, I doubt they are in new modules . If we add a feature to (say) the JIT, or the JSON module, we have to write new C code.

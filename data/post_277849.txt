@@ -1,0 +1,4 @@
+Author: H. Vetinari
+Created at: 2025-11-20 00:58
+Number: 150
+Clean content: Emma Smith: I think that in Linux they have seen a number of improvements by better defining the ownership of various parts of the kernel, so this would be very nice. This is one of the points that Greg KH [1] explicitly calls out repeatedly as a benefit of the Rust-for-Linux effort, even if Rust went away again (here’s a recent talk with a timestamped link ): By forcing the C APIs to define their semantics, the C APIs themselves often were improved. one of the most veteran Linux contributors, maintainer of LTS kernels and involved in every security issue ↩︎

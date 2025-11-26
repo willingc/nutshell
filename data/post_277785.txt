@@ -1,0 +1,4 @@
+Author: Jacopo Abramo
+Created at: 2025-11-19 15:17
+Number: 142
+Clean content: I don’t want to bring fuel to the fire as I’m just observing the decision making process, but the timing of the situation was just too funny for me. Apparently in September Cloudflare migrated some internal library to Rust … … and after investigation, the recent November outage was effectively caused by some code that wasn’t appropriately managing memory in this new library. But at any rate the pre-PEP has already been discussed exhaustively, it was just my sense of humour that found this hilarious in the context of this discussion where lots of points about integrating Rust were about memory safety.

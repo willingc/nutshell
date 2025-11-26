@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-18 20:32
+Number: 120
+Clean content: This is no longer the current plan, please see Pre-PEP: Rust for CPython - #117 by emmatyping I don’t think we should emit a warning now that these items will be entirely optional and we don’t have a plan for making Rust required. When that is proposed in a PEP, the timeline for emitting warnings and requiring Rust will be decided there.

@@ -1,0 +1,4 @@
+Author: Sergey Fedorov
+Created at: 2025-11-18 14:00
+Number: 92
+Clean content: This is very disappointing to see rust being pushed into Python itself. That will break Python for all platforms where rust is broken, which will hit users badly, since a lot of apps rely on Python. (And will be a regression as compared to C implementation generally.) Using it optionally, like Ruby does, is fine. I honestly hope it does not become obligatory.

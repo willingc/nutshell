@@ -1,0 +1,4 @@
+Author: Brénainn Woodsend
+Created at: 2025-11-20 22:44
+Number: 185
+Clean content: Slightly tangential but I find optional stdlib components to be a menace and would really like their proliferation to be minimised. For pre-built Python installations like those on python.org or python-build-standalone , there’s nothing optional about them – someone will need them therefore they must be included therefore everyone gets them whether they’re needed or not. For those installing from source, it’s a footgun with remediation steps so platform specific that they can rarely even be written down in any detail. For those building Python for other people, it’s both. For distro-provided Python, it’s a surprise extra system dependency that rarely follows any predictable pattern and doesn’t correlate to anything in a lockfile. I’ve spent way more time debugging tkinter installations than even monster PyPI packages like Qt.

@@ -1,0 +1,15 @@
+Author: Raphael Gaschignard
+Created at: 2025-11-18 04:56
+Number: 63
+Clean content: Yeah I think the BorrowedBuffer is a good example of helping a bit with its Drop . I guess this would be more convincing to me (random person who has little stake in this beyond poking in CPython internals from time to time but wants to see some idea of this succeed!) if we go a bit further in the barebones interpretation to prove some idea of improved ergonomics, focused entirely on this encode implementation, which includes just enough bookkeeping futzing that would be nice to not see anymore: let result = unsafe {
+        PyBytes_FromStringAndSize(ptr::null(), output_len as Py_ssize_t)
+    };
+    if result.is_null() {
+        return ptr::null_mut();
+    } instead being something like: let Ok(result) = PyBytes::from_string_and_size(ptr::null(), output_len as Py_ssize_t) else { return ptr::null_mut() } ; Or even, if there’s some way to make PyResult -y thing that could collapse the common CPython errors nicely (maybe not a possible thing!): let result = PyBytes::uninit_from_size(output_len)? Just like BorrowedBuffer , it feels like there could be some single-field wrapper structs, and smart constructors that could operate in a “Rust API”-y level to work off of results Similarly in: let dest_ptr = unsafe { PyBytes_AsString(result) };
+if dest_ptr.is_null() {
+    unsafe {
+        Py_DecRef(result);
+    }
+    return ptr::null_mut();
+} I would have expected we could have some Rust-y wrapper on references that would give us that Py_DecRef call for free just through RAII. And maybe I’m too optimistic of Rust’s compiler toolchain, but if the wrapper was a single field struct, my impression is we would be able to get that for free. The thing I would assume is that within the extension module we could go full Rust API goodness, and it’s only really at the entry and exit points that one would need to go back to acknowledging CPython’s realities a bit more. Anyways yeah, I’m very curious what the ‘pie in the sky most of the APIs used in the encoding example have a nice API’ version of the encode port looks like, because jumping from C to Rust could make the maintenance barrier seem way lower. We don’t have to port everything, just enough and enough smoke and mirrors to say “this is what it looks like in practice for this one method”. Because right now beyond the platform support tradeoffs etc, the PoC example is also presenting as generally more code, not less. In my mind’s eye we wouldn’t even have a tradeoff here, and the code would be simpler.

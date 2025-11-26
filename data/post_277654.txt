@@ -1,0 +1,4 @@
+Author: Antoine Pitrou
+Created at: 2025-11-18 15:42
+Number: 95
+Clean content: Well, there are CVEs in pure Python too, that doesn’t mean that Python and C are equivalent when it comes to avoiding security vulnerabilities.

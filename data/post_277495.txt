@@ -1,0 +1,4 @@
+Author: Ed Page
+Created at: 2025-11-17 19:18
+Number: 14
+Clean content: emmatyping: How to handle bootstrapping Rust and CPython Making Rust a dependency of CPython would introduce a bootstrapping problem: Rust depends on Python to bootstrap its compiler . There are several workarounds to this: Rust could always ensure their bootstrap script is compatible with older versions of Python. Then the process is to build an older version of Python, build Rust, then build a newer version of CPython. The bootstrap script is currently compatible with Python 2, so this seems likely to continue to be the case Rust could use PyPy to bootstrap Rust could drop their usage of Python in the bootstrap process I ( @emmatyping ) plan to reach out to the Rust core team and ask what their thoughts are on this issue. The specific team involved is T-bootstrap which you can reach out to on zulip at #t-infra/bootstrap

@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-18 10:45
+Number: 79
+Clean content: Thank you. Is there any chance that clarification could be added to GCC Testing Efforts - GNU Project since that’s what shows up in search results?

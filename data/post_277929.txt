@@ -1,0 +1,4 @@
+Author: Antoine Pitrou
+Created at: 2025-11-20 15:25
+Number: 162
+Clean content: Steve Dower: we might as well bundle up C++ extension modules in the same PEP, since a similar number of users will be unable to use those, and some extension modules would benefit. I don’t think it would be the case. Everywhere you have a C compiler, you probably have a C++ compiler too.

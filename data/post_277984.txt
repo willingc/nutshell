@@ -1,0 +1,4 @@
+Author: Steve Dower
+Created at: 2025-11-20 21:55
+Number: 182
+Clean content: James Webber: The point is not “we really need a faster base64 , and specifically it should be written in Rust”. Sure, and the fact that we wouldn’t take this proposal seriously should also indicate that the lesser proposal of “we really need … Rust” isn’t going to be any more persuasive. On the other hand, “our drop-in replacement for json or re is 10x faster than the stdlib, can we merge it” is a far more interesting discussion to have. Emma Smith: Great! So then once we have a prototype of the abstraction your concerns will be assuaged? Probably not But my interest would be piqued by a production-ready replacement for an existing module, or a new module that we want in the stdlib anyway and the best way to get it is to bring in a Rust implementation.

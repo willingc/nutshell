@@ -1,0 +1,4 @@
+Author: Dan
+Created at: 2025-11-18 05:09
+Number: 65
+Clean content: but eventually will become a required dependency of CPython What does this mean for projects that embed CPython inside their C++ projects? Boost::python or pybind11?

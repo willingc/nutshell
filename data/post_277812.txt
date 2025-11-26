@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-19 18:58
+Number: 146
+Clean content: To elaborate on “nothing to do with […] Rust”, the outage was down to: We wrote a recipient service which preallocates memory as an optimization. Since we wrote it to ingest data from one of our other services, we made the assumption the data would always be well formed and had it preallocate 3⅓ times as much space as we’re currently using. We committed a bug to the sender service which caused it to produce data bundles that blew past that 3⅓ times safety margin. It’s a logic bug. If they’d written it in C or C++ it would have been an ASSERT or SIGSEGV and, in Rust, it was doing the equivalent of dying with an uncaught AssertionError . (Basically, a violation of “Assume ‘unreachable’ never is”.)

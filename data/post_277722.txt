@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-19 02:34
+Number: 128
+Clean content: Filipe Laíns: I don’t feel the PEP provides enough justification to make Rust a hard build dependency, and I think that’s something that would be difficult to provide at this point. Good news, this was agreed upon somewhere in the next 100ish posts of the thread.

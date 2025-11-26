@@ -1,0 +1,4 @@
+Author: Jelle Zijlstra
+Created at: 2025-11-20 20:18
+Number: 173
+Clean content: My thoughts are that a proposal that allows Rust only for optional extension modules is likely not useful enough to justify the cost of adding a new language. It can be a first step (in fact, it’s a very reasonable first step!), but that means there must be a plan to expand beyond it just being an optional part of building CPython. And that in turn means that we need to deal with the concerns that are being raised around bootstrapping and niche platforms.

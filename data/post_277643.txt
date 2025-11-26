@@ -1,0 +1,4 @@
+Author: Alex Gaynor
+Created at: 2025-11-18 13:56
+Number: 91
+Clean content: dimaqq: A safe C equivalent would be two lines long. FWIW, I’ve tried pretty hard, but I can’t find a way to write a (readable) 2-line version of this function in C that retains the overflow checking. (And any C version I do either relies on a magic sentinel like -1 for a return value or an out param, which is obviously more challenging for the caller). I think this is a good example of a dynamic with Rust: it definitely forces you to front load a lot of work. It’s more annoying for building POCs and playing with ideas. The trade-off is you get way less debugging and vulnerabilities on the back side.

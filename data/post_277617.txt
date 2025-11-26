@@ -1,0 +1,4 @@
+Author: Sam James
+Created at: 2025-11-18 10:45
+Number: 80
+Clean content: In the thread, I did promise to work on improving documentation, so yes, it will be done. EDIT: Filed PR122742 for that.

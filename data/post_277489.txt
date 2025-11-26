@@ -1,0 +1,4 @@
+Author: Gundarin Roman
+Created at: 2025-11-17 18:17
+Number: 9
+Clean content: Doesn’t “C“ in the name of “CPython“ means “C programming language”? If so, shouldn’t the project be eventually renamed when a significant part of it is (re)written in Rust? /joke, but who knows

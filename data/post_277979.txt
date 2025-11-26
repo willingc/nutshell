@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-20 21:49
+Number: 179
+Clean content: I think that this is missing the point of this proposal, though. The point is not “we really need a faster base64 , and specifically it should be written in Rust”. It’s “we should think about introducing Rust. The minimally invasive way to do so is to start with an optional extension module [1] ”. that is, one that accelerates existing functionality ↩︎

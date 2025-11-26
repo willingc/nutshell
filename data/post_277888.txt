@@ -1,0 +1,4 @@
+Author: Da Woods
+Created at: 2025-11-20 07:02
+Number: 153
+Clean content: Question related to RustPython: they look to have made good progress on compatibility but not great progress on performance so far. Is there anything to be learned from why? I.e. if it’s just lack of time and contributors then it probably isn’t very interesting to this discussion, but if they were finding some optimisations difficult in Rust it might be useful to know.

@@ -1,0 +1,4 @@
+Author: Tin Tvrtković
+Created at: 2025-11-18 18:38
+Number: 110
+Clean content: Love this effort, a strong +1 from me. I’ve been historically wary of bigger CPython contributions because I don’t know C, and don’t particularly want to know it. Rust is a completely different matter. A lot of the introduction here is aimed at Rust as a replacement for the C parts of CPython. But I think Rust could be a huge win for optimizing Python parts of CPython. “Rewrite module X in C” usually means a significant effort, both up front and on-going, maintenance-wise. Rewriting in Rust could be a completely different story, if we do this right.

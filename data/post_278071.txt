@@ -1,0 +1,4 @@
+Author: Antoine Pitrou
+Created at: 2025-11-21 19:51
+Number: 192
+Clean content: Ok, here’s a potential exercise if the optional module story isn’t appealing. The memoryview object is written in C and the performance of memoryview.index is currently horrid due to being written in a very naive way . Accelerating it in C involves generic programming in a language that doesn’t provide any decent metaprogramming. But if an alternate implementation of memoryview was written in Rust, then perhaps those accelerations would be much easier to implement (of course, you also need to develop some basic infrastructure for that: for example, a facility to dispatch to different generic specializations depending on the memoryview format ). So we could have an optional implementation of memoryview in Rust, and fallback on the C one on Rust-less platforms.

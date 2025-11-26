@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-20 22:07
+Number: 184
+Clean content: Da Woods: I think PEP 793 would disagree with this and probably be simpler from a Rust point of view because it doesn’t involve C macros Fair point, and perhaps we should adopt PEP 793. I hadn’t realized the PEP was accepted, exciting!

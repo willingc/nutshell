@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-18 19:07
+Number: 117
+Clean content: I wanted to start by thanking everyone for their feedback on the proposal so far, and say that we look forward to continued discussion. After reviewing the discussion so far, we’ve decided to re-focus the (pre-)PEP to only propose the introduction of optional Rust extension modules to CPython. We hope that with experiences gained from introducing Rust for extension modules, Rust can eventually be used for working on the required modules and the interpreter core itself in the future. However, we will leave that to a future PEP when we know more and will not be proposing that as part of the current in-discussion PEP. This should address issues with bootstrapping, language portability, and churn. We’ve also been noting lots of other feedback we’ve received, but I wanted to call this one out in particular as it has been the source of a large portion of the discussion.

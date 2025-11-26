@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-18 05:18
+Number: 66
+Clean content: You would need Rust to build any Rust extension modules you want in your embedded Python. I believe most embedding links to libpython so that would already be built and wouldn’t require Rust.

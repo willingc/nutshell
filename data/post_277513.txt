@@ -1,0 +1,4 @@
+Author: Dmitry
+Created at: 2025-11-17 21:17
+Number: 28
+Clean content: It’s been such an exciting time for Python lately, with this proposal, lazy imports and frozendicts! Another benefit that you might want to mention in the PEP is how IIUC this would open the door for the possibility of shipping with Python modern Rust-based tooling for dep management, formatting and linting, with all the performance, correctness and community enthusiasm that comes with it.

@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-18 05:05
+Number: 64
+Clean content: Interactions between Python objects and borrows is rather complicated. I don’t think this thread is a great place to go over detailed API design discussion as that isn’t the goal of the PEP, but I’d be happy to chat in another forum like the Python Discord or via DM. I will say a pie-in-the-sky API will look somewhat like an implementation using PyO3 . I can write up such an implementation and share that if people think it would informative.

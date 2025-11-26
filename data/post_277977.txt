@@ -1,0 +1,4 @@
+Author: Steve Dower
+Created at: 2025-11-20 21:45
+Number: 178
+Clean content: James Webber: Surely this step was accomplished years ago Yeah, that’s my point. James Webber: So what would be the next proposal after that? Write one, prove it’s better, propose stdlib inclusion. It doesn’t even have to be a drop-in replacement, it can be a net-new module (but then the proposal needs to justify adding the module, which might make it too complicated). This is the standing process for adding something to the stdlib, and all that’s different is it’s the first proposal that would also bring in a new language. But then we are at least debating the merits in the context of something concrete, rather than something that feels very hypothetical.

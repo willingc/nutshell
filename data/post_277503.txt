@@ -1,0 +1,4 @@
+Author: Alex Gaynor
+Created at: 2025-11-17 20:40
+Number: 20
+Clean content: pganssle: I guess the question is a dual one: can we write Rust in a way that it will not cause build times to explode and if we cannot, is the plan to keep the scope of Rust in CPython to a level where building is still very accessible? The best things we can do to keep Rust build UX good for core devs (and other contributors): Keep a lean dep tree – and be able to rebuild each module individually (lots of parallelism, like we have in C). Have a easy to use flow that uses cargo check , which does type checking but doesn’t actually compile, since that gives you a very fast devloop.

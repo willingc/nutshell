@@ -1,0 +1,4 @@
+Author: William Woodruff
+Created at: 2025-11-17 22:34
+Number: 43
+Clean content: Steven Sun: Besides the code in rust compiler, Rust support procedural macro which executes user-written code during compilation. It requires a lot of work to fully audit. It’s worth noting that Rust’s compile-time code execution (via build.rs ) closely mirrors the style and trust model already assumed by Python packaging (via setup.py ). I’m not extremely familiar with the history of build.rs , but it wouldn’t especially surprise me if setup.py (and Gemfile , etc.) were used as a reference point. (I also think the risk of compile-time code execution in Rust is narrow compared to what already exists: how often do you read the autoconf that your C and C++ dependencies use to codegen shell scripts at build time? We have empirical evidence in the form of xz-utils that attackers find that very appealing!)

@@ -1,0 +1,4 @@
+Author: GalaxySnail
+Created at: 2025-11-20 04:51
+Number: 151
+Clean content: Brett Cannon: FYI Git 2.52 now optionally uses Rust and it will be required in Git 3 . Git 2 → Git 3 sounds like Python 3 → Python 4. Git isn’t a programming language, you only need an implementation of Git’s wire protocol to interoperate with others, don’t even need to keep the on-disk format compatible. I don’t think Git’s choice necessarily tells us what we should do for CPython. Since the authors of this pre-PEP have already decided to make Rust optional for CPython, there isn’t much more to discuss about making Rust required.

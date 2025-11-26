@@ -1,0 +1,4 @@
+Author: Barry Warsaw
+Created at: 2025-11-17 19:51
+Number: 17
+Clean content: Guido van Rossum: Snarky note: do we eventually have to rename CPython to CRPython? Clearly it should be “CrustyPython” But seriously, I’m really excited about this proposal.

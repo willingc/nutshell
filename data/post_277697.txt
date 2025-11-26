@@ -1,0 +1,4 @@
+Author: William Woodruff
+Created at: 2025-11-18 21:03
+Number: 123
+Clean content: Norman Lorrain: I would quantify it in terms of the timeline a codebase will still run. 1,2,5,10 years. Yes, I moderate it. I’ve been burned by changes, and I guess this is why a foundational change like moving to Rust causes concern. Why not defer this to Python 4? I don’t think CPython makes a hard and fast guarantee that your code will run unmodified in 1, 2, 5, or 10 years. But even if it did: the presence of Rust inside the runtime doesn’t seem material to that property, or at least is no more material to it than everything that happens on each minor release of Python 3 anyways.

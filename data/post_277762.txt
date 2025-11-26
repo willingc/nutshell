@@ -1,0 +1,4 @@
+Author: Kirill Podoprigora
+Created at: 2025-11-19 10:12
+Number: 140
+Clean content: gh-133767: Fix use-after-free in the unicode-escape decoder with an error handler by serhiy-storchaka · Pull Request #129648 · python/cpython · GitHub and many other UAFs

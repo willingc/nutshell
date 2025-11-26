@@ -1,0 +1,4 @@
+Author: Norman Lorrain
+Created at: 2025-11-18 20:34
+Number: 121
+Clean content: I would quantify it in terms of the timeline a codebase will still run.  1,2,5,10 years. Yes, I moderate it.  I’ve been burned by changes, and I guess this is why a foundational change like moving to Rust causes concern.  Why not defer this to Python 4?

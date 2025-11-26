@@ -1,0 +1,4 @@
+Author: Cornelius Krupp
+Created at: 2025-11-17 16:25
+Number: 2
+Clean content: Isn’t the experience in the linux kernel with adding rust support as a core part more a cautionary tale? At least it looks that way from the outside. There is constant friction between the two different “types of programmers”, causing a lot of quite public disagreement. If rust becomes a requirement for core devs, might that scare away some current maintainers who don’t want to deal with it?

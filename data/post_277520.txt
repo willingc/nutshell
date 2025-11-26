@@ -1,0 +1,4 @@
+Author: Kirill Podoprigora
+Created at: 2025-11-17 21:52
+Number: 32
+Clean content: @davidhewitt Hi David, and thank you very much for maintaining pyo3! I have a question that we should probably address in the PEP: Can we integrate MIRI into our workflow? Have you tried using it in pyo3, and what were the results? TL;DR: MIRI is an undefined-behavior detection tool for Rust, so I’m guessing it could be helpful for us

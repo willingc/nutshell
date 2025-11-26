@@ -1,0 +1,4 @@
+Author: Michael H
+Created at: 2025-11-18 16:54
+Number: 97
+Clean content: No, but it does undercut the idea that the memory safety guarantees have been “formally proven” when there are longstanding known direct counterexamples. For what it’s worth, Miri does catch that issue.

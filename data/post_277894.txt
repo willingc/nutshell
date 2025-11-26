@@ -1,0 +1,4 @@
+Author: Jeong, YunWon
+Created at: 2025-11-20 08:17
+Number: 154
+Clean content: da-woods: Question related to RustPython: they look to have made good progress on compatibility but not great progress on performance so far. Is there anything to be learned from why? 2 main reasons, which are mirror-side of each other. First, the core language part of CPython is very well optimized. RustPython adopt a few parts of them, but not able to finish major parts of them. Second, RustPython contributors (like me) didn’t have enough interests on the performance. So it happened just occasionally. So… that’s not by technical issues. Just lack of driving to the performance. If anyone interested in enhancing performance of RustPython, I will do my best support.

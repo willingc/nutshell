@@ -1,0 +1,4 @@
+Author: Nathan Goldbaum
+Created at: 2025-11-17 19:13
+Number: 13
+Clean content: As a PyO3 maintainer IMO it’d be really nice if we could get rid of the need for the pyo3-ffi crate and instead rely on bindgen bindings maintained by upstream. Most of the overhead of supporting new Python versions is updating the FFI bindings. I bet @davidhewitt has opinions about this from the PyO3 maintainer perspective and I’ll defer to him if he disagrees with me about pyo3-ffi .

@@ -1,0 +1,4 @@
+Author: David Hewitt
+Created at: 2025-11-18 12:00
+Number: 85
+Clean content: pitrou: And conversely, would a ASAN/UBSAN build of CPython be able to see/instrument the Rust parts? ASAN can definitely work with the caveat that this is a nightly Rust feature at present - sanitizer - The Rust Unstable Book UBSAN - I’m less sure, I suspect that the C parts would be instrumented, the Rust parts would not, I would think this would not impact getting meaningful value from the sanitizer.

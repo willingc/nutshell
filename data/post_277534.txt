@@ -1,0 +1,4 @@
+Author: Steve Dower
+Created at: 2025-11-17 22:17
+Number: 38
+Clean content: I’ll briefly put my security team hat on and say that the security side of this is being way overblown. The risk of a supply-chain attack via the compiler is miniscule compared to the multitude of other options - adding Rust doesn’t make that part worse. I’d rather see people discussing things like how Rust provides any protection/benefit at all when we have to interop everything with “unsafe” C code at a level below anywhere PyO3 could help (which is only safe because it relies on our public C API, which is the safety barrier with guaranteed semantics that can be mapped into Rust’s semantics).

@@ -1,0 +1,4 @@
+Author: Roman Vlasenko
+Created at: 2025-11-19 17:20
+Number: 144
+Clean content: jacopoabramo: it was just my sense of humour that found this hilarious in the context of this discussion where lots of points about integrating Rust were about memory safety. I’d say that this is misleading. The Cloudflare’s outage actually has nothing to do with the memory safety guarantees of Rust or with inappropriately managing memory in general.

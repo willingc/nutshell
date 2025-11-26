@@ -1,0 +1,4 @@
+Author: Alex Gaynor
+Created at: 2025-11-17 17:05
+Number: 6
+Clean content: As I think many folks know, I’ve been quite involved in these sorts of efforts (starting the effort that became Rust for Linux at the PyCon sprints, migrating pyca/cryptography to Rust, and helping to maintain pyo3). As a result, it will come to no one’s surprise that I’m very supportive of this pre-PEP I’m happy to answer any questions folks have about those experiences and lessons learned.

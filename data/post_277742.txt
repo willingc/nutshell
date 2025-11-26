@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-19 08:55
+Number: 135
+Clean content: Go depends on having a garbage collector and garbage collectors are solitary creatures, which makes it unsuitable for writing extensions or rewriting components of a C or C++ codebase. (That’s one reason Jython and IronPython exist, instead of integrating CPython with the JVM and CLR. They live within the JVM or CLR’s existing GC instead of competing with it.) Rust is noteworthy because it’s the only language to gain significant traction in this niche previously held almost exclusively by C and C++. EDIT: To elaborate on that, Rust enables compile-time guarantees that C and C++ are incapable of without relying on a heavy VM to do it. That’s what makes it essentially unique. (Though other languages like D and Ada are starting to copy Rust’s innovations.)

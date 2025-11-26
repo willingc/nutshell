@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-20 15:05
+Number: 158
+Clean content: Steve Dower: (which I assume it is, just unofficially for now - it doesn’t make any sense at all to “put Rust in CPython” without that ambition, since you can already write an extension module using Rust without our permission ). While I think some view that as an end goal, a PEP to allow Rust extensions in the stdlib still stands on its own merit–there should be a formal decision whether to allow that expansion. Even if the ultimate goal was “let some optional extensions be Rust” it would still need a PEP, no?

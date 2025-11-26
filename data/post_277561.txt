@@ -1,0 +1,4 @@
+Author: Alex Gaynor
+Created at: 2025-11-18 00:59
+Number: 51
+Clean content: emmatyping: The goal of this project should not specifically be to re-write CPython in Rust, but rather iteratively move more C code to Rust over time and reap the benefits for those portions of code. One thing I do think is worth saying: The highest ROI pieces are going to be modules and perhaps builtin types/functions, which can be implemented entirely in safe Rust with ergonomics high level APIs, reaping performance and developer experience/velocity wins. Something like the GC is at the absolute nadir of the value of Rust: it inevitably requires a decent amount of unsafe and won’t benefit from Rust’s other advantages. And then many other things (e.g., the parser or interpreter loop) are likely to be in the middle in terms of where I’d estimate the ROI is.

@@ -1,0 +1,4 @@
+Author: Jeong, YunWon
+Created at: 2025-11-18 07:32
+Number: 69
+Clean content: To achieve good ergonomics, we’ll need not only cpython-sys but also another crate built on top of it that provides proper Rust abstractions. (Following naming conventions, it would be called cpython , but that name is already taken.) Right now, the PEP only covers cpython-sys , but if we expect Rust ergonomics by this PEP, I think some consideration of this additional crate should also be included.

@@ -1,0 +1,4 @@
+Author: Zachary Harrold
+Created at: 2025-11-18 23:28
+Number: 125
+Clean content: barry: I would go further and predict that this will never happen, and claim that it shouldn’t be a goal of the Rust-in-Python project. There are 10**oodles of person-years invested in the CPython core interpreter, and I just don’t see how that will ever be cost effective to rewrite, even as a Ship of Theseus . I mean, there’s already +12,777,745/-9,190,109 total changes in a project with (currently) 2,791,005 lines of text (git diffs include non-code so this count does too). Arguably, cpython has been rewritten at least 4 times now.

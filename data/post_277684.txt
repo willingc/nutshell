@@ -1,0 +1,4 @@
+Author: Stephan Sokolow
+Created at: 2025-11-18 18:44
+Number: 112
+Clean content: It should. See Stability as a Deliverable for a description of Rust’s “v1.0 Stability Promise”. Basically, so long as you’re not depending on a compiler bug or security hole, the only thing which should be allowed to break vN code in any later vN+M version of the Rust compiler is the occasional change to how type inference works in edge cases. …also, I almost forgot to mention this: Ubuntu’s troubles with uutils are, in my opinion and in the opinion of others, self-inflicted. The uutils devs are quite up-front that they haven’t yet achieved their goal of passing all the tests in the GNU Coreutils test suite, so Ubuntu trying to use them is similar to all the distros that made a mess by ignoring KDE’s announcement that 4.0 was meant to be a developer preview.

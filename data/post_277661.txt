@@ -1,0 +1,4 @@
+Author: Dustin Spicuzza
+Created at: 2025-11-18 17:01
+Number: 98
+Clean content: Emma Smith: How should we manage dependencies? By default cargo will download dependencies which aren’t already cached locally when cargo build is invoked, but perhaps we should vendor these? Cargo has built-in support for vendoring code. We could also cargo fetch to download dependencies at any other part of the build process (such as when running configure). Currently, it is trivial to build python on a computer that isn’t connected to the internet. IMO this must continue to be the case, it’s really important to many users in restricted environments.

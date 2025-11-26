@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-20 21:38
+Number: 177
+Clean content: Steve Dower: If a good first step to exposing subinterpreters (an existing core feature) was a module on PyPI, then I don’t see why a drop-in replacement for stdlib modules written in Rust can’t also start on PyPI. Surely this step was accomplished years ago, with the caveat that the Rust extensions aren’t usually “drop-in” replacements for an existing stdlib module, because that’s rarely what someone wanted to write. I don’t think anyone doubts that such a thing is possible, though? So what would be the next proposal after that?

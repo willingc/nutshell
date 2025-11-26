@@ -1,0 +1,4 @@
+Author: Sergey "Shnatsel" Davidoff
+Created at: 2025-11-18 10:26
+Number: 77
+Clean content: Rosuav: open questions such as the impact of a potential Ken Thompson style compiler hack . Will CPython lose trust by becoming dependent on a single specific compiler that might be subject to such a hack? There is an alternative Rust compiler implementation in C++, mrustc , that implements just enough Rust to compile the official Rust the compiler without relying on it in any capacity. The official Rust compiler bootstrapped both ways (original chain and mrustc) produce identical binaries, which is sufficient to prove the absence of the Ken Thompson hack.

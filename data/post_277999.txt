@@ -1,0 +1,4 @@
+Author: Brénainn Woodsend
+Created at: 2025-11-20 23:01
+Number: 187
+Clean content: In that case, perhaps Python’s build system would have to be pushy and fail without rust by default unless some --use-legacy-c-{module}-implementation flag is given? Otherwise, I suspect that many of the people downstream we want feedback from aren’t going to notice it.

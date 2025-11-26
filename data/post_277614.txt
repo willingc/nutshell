@@ -1,0 +1,4 @@
+Author: Sam James
+Created at: 2025-11-18 10:42
+Number: 78
+Clean content: It should be noted that, if I understand “GCC Testing Efforts” site:gnu.org correctly, GCC’s support for all platforms would count as “Tier 3, at varying degrees of stubbornness” by Rust testing standards since I don’t see any mention of any of the “Current efforts” entries being integrated to the same “CI on every push and will block merging into main if it fails” degree. Rust’s approach to Tiers 1 and 2 leans in the direction of “We don’t trust our testing to be sufficient for Continuous Deployment, but we’ll do it as diligently as if we were pushing directly to stable channel”. I don’t really want to derail this thread into a discussion on models of testing, but a similar discussion was had the other week on lobste.rs . I don’t think it’s a accurate summary to say Rust’s ‘testing standards’ just mean ‘Tier 3’ for GCC.

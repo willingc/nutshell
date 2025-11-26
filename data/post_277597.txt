@@ -1,0 +1,4 @@
+Author: Dan
+Created at: 2025-11-18 05:26
+Number: 67
+Clean content: Emma Smith: You would need Rust to build any Rust extension modules you Thank you, I know nothing of Rust, I see the word ‘dependency’ and I immediately get scared. Python and all the 3rd party modules must load into the host application’s process. In my case, I’m running Python inside AutoCAD for windows. If this is optional, or something that’s not going load some sort of runtime, or something that could cause issues, then great

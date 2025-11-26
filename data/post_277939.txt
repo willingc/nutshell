@@ -1,0 +1,4 @@
+Author: Filipe Laíns
+Created at: 2025-11-20 16:52
+Number: 166
+Clean content: Thanks for pointing that out, that’s a great point. Personally, I thought of optionally introducing Rust more as a way to better understand how it would affect the community, and how well it would fit into the CPython codebase, and developers’ workflows. I also don’t see a great value from allowing Rust in optional modules purely from a maintainer perspective, but I think it is a necessary step to decide on making Rust a hard build dependency. That said, maybe someone else does have a use-case where Rust being available for optional components would be great. If that’s the case, it would be great to let us know

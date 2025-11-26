@@ -1,0 +1,4 @@
+Author: Brénainn Woodsend
+Created at: 2025-11-18 01:51
+Number: 55
+Clean content: Will the binaries written in rust be able to share a single copy of dependencies and/or the rust runtime? My recollection is that ABI in rust is a forgotten dream and that each library/ or executable ends up with separate copy of all its dependencies plus a big fat core runtime lumped into it, turning a network of little libraries [1] into a network of bloatware. But it’s a long time since my last (unsuccessful) attempt to get into rust so that might no longer be true (assuming that it was ever true). or extension modules in CPython’s case ↩︎

@@ -1,0 +1,4 @@
+Author: Miraculixx
+Created at: 2025-11-19 09:52
+Number: 138
+Clean content: Eclips4: We’re fully committed to putting a lot of effort into this initiative, and to making sure we don’t fail Said every team ever. I don’t doubt that. Just for reference, can you point to some of the memory saftey issues that would have been avoided if CPython were using Rust?

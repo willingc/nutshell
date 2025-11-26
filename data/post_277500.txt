@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-17 19:55
+Number: 18
+Clean content: In my experience incremental Rust builds are also very fast–the initial setup (including downloading and building all the dependencies) can be slow, but it’s able to do fast incremental builds just fine. Also, there’s a big difference between debug and release mode–building in debug mode is way faster. I would be surprised if this impacted iteration time unless you’re trying to rebuild the world every time.

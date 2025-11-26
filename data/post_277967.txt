@@ -1,0 +1,4 @@
+Author: Emma Smith
+Created at: 2025-11-20 20:15
+Number: 172
+Clean content: Jelle Zijlstra: While most vulnerabilities may be in new code, I doubt they are in new modules . If we add a feature to (say) the JIT, or the JSON module, we have to write new C code. We absolutely need to write new C code for the JIT, the JSON module, or most other parts of CPython when making changes and adding features. However I think demanding immediate results across the code base from introducing Rust is infeasible. I’m curious as to your thoughts on the rest of my comment explaining why.

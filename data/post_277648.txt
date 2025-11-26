@@ -1,0 +1,4 @@
+Author: ShalokShalom
+Created at: 2025-11-18 15:19
+Number: 94
+Clean content: Rust’s memory safety guarantees have been formally proven by the RustBelt project for code that does not use “unsafe” . There are CVE’s in safe Rust

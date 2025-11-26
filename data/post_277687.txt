@@ -1,0 +1,4 @@
+Author: Sam James
+Created at: 2025-11-18 18:49
+Number: 115
+Clean content: cargo fetch and cargo build --offline can be used to separate the downloading and building while otherwise using Cargo the same way. That option would require some work besides git clone which may not be desirable. It does bring up the general question of whether CPython would want to aggressively use crates (which can bring licence questions too) or not. CPython currently has a pretty small set of external dependencies.

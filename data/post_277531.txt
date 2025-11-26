@@ -1,0 +1,8 @@
+Author: Steven Sun
+Created at: 2025-11-17 22:10
+Number: 36
+Clean content: Rosuav: The risk, in short, is that rustc could easily include all kinds of code that isn’t obvious to an outside auditor. I want to add that this risk is real. Besides the code in rust compiler, Rust support procedural macro which executes user-written code during compilation. It requires a lot of work to fully audit. This happened in Rust community before. One previous event is a well-used library shipping pre-built binary to accelerate procedural macro without notice, causing many worries from users. github.com/serde-rs/serde using serde_derive without precompiled binary opened 11:39PM - 27 Jul 23 UTC closed 03:50PM - 17 Aug 23 UTC decathorpe I'm working on packaging serde for Fedora Linux, and I noticed that recent versi … ons of serde_derive ship a precompiled binary now. This is problematic for us, since we cannot, under *no* circumstances (with only very few exceptions, for firmware or the like), redistribute precompiled binaries.
+
+Right now the fallback I am trying to apply for the short-term is to patch serde_derive/lib.rs to unconditionally include lib_from_source.rs (we don't really care about compilation speed for our non-interactive builds).
+
+I'm wondering, how is the x86_64-unknown-linux-gnu binary actually produced? The workspace layout in this project looks very differently from when I last looked in here ... Would it be possible for us to re-create the binary ourselves so we can actually ship it? Or would it be possible to adapt the serde_derive crate to fall back to the non-precompiled code path if the binary file is missing? Rosuav: how can we trust rust? How about a switch to turn off all rust code?

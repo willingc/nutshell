@@ -1,0 +1,4 @@
+Author: William Woodruff
+Created at: 2025-11-18 18:47
+Number: 113
+Clean content: Norman Lorrain: The core issue is trust. There is “currency” in trust. Python has a healthy bank account of trust, and I fear it will be at risk. How should the Python community quantify this trust, given that your original metric (standardization) doesn’t apply to Python itself? Conversely: do you moderate your trust in CPython based on the presence of unstandardized, compiler-specific extensions? The last time I checked, there were a nontrivial number of GCC extensions and attributes in the codebase (other compilers go to great efforts to be compatible with these, but they’re not standard).

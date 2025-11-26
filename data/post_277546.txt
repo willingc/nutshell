@@ -1,0 +1,4 @@
+Author: Steven Sun
+Created at: 2025-11-17 23:03
+Number: 44
+Clean content: Still a few important questions: Who will lead this large-scale refactoring? Who will be responsible for designing the overall code architecture? Who will be making final decisions (for example, how will conflicts with the existing C implementation be resolved)? How can we ensure a stable core team will be able to contribute continuously to this long-term development effort? Is there a communication plan to ensure that progress, challenges, and design changes are transparently communicated to the entire community? How are the project’s key milestones planned? At what point in time or under what circumstances should we reassess the feasibility of these milestones or the overall direction of the project?

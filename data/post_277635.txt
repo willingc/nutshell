@@ -1,0 +1,10 @@
+Author: Dima Tisnek
+Created at: 2025-11-18 13:08
+Number: 88
+Clean content: Thank you Emma and Kirill for taking this on. The kudos you deserve is beyond what can be expressed in words. While I love reading the virtues of rust extolled… there are perhaps some areas that pre-pep should address that got glossed over. Rust’s approach to memory safety in multithreaded programs is very different from Python’s. In fact, I don’t think it can be used out of the box. Please make a plan or a PoC and show otherwise. Or set out an educated set of guards rails. Looking at the sample module, this stood out to me: #[inline]
+fn encoded_output_len(input_len: usize) -> Option<usize> {
+    input_len
+        .checked_add(2)
+        .map(|n| n / 3)
+        .and_then(|blocks| blocks.checked_mul(4))
+} This is just rust for the sake of rust. A safe C equivalent would be two lines long. The moral is that not all valid rust code belongs to CPython, just like PEP-7, there needs to be a spec about what rust features and idioms to use and what not to.

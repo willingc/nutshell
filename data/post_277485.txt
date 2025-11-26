@@ -1,0 +1,4 @@
+Author: James Webber
+Created at: 2025-11-17 17:17
+Number: 7
+Clean content: As a Rust fan I think this is super cool! I do wonder if this is too much to figure out in one PEP, when parts of it seems pretty easily separable. I can see how the overall vision fits together, but it’s a lot. Would it make sense to restrict the initial proposal as just “create the cpython-sys crate and allow optional Rust extensions in the stdlib”? That would allow iteration on making a good generic interface [1] without requiring the SC to make a decision on the long-term plan. there is plenty of prior art in PyO3 , and I think the HPy project has some relevance there too ↩︎
