@@ -47,10 +47,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/willingc/discourse-to-sqlite"
-"Bug Tracker" = "https://github.com/willingc/discourse-to-sqlite/issues"
-Discussions = "https://github.com/willingc/discourse-to-sqlite/discussions"
-Changelog = "https://github.com/willingc/discourse-to-sqlite/releases"
+Homepage = "https://github.com/willingc/nutshell"
+"Bug Tracker" = "https://github.com/willingc/nutshell/issues"
+Discussions = "https://github.com/willingc/nutsshell/discussions"
+Changelog = "https://github.com/willingc/nutshell/releases"
 
 
 [dependency-groups]
