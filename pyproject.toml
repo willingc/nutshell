@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "discuss_nutshell"
+name = "discuss-nutshell"
 authors = [
   { name = "Carol Willing", email = "willingc@gmail.com" },
 ]
@@ -47,10 +47,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/willingc/discuss_nutshell"
-"Bug Tracker" = "https://github.com/willingc/discuss_nutshell/issues"
-Discussions = "https://github.com/willingc/nutsshell/discussions"
-Changelog = "https://github.com/willingc/discuss_nutshell/releases"
+Homepage = "https://github.com/willingc/discuss-nutshell"
+"Bug Tracker" = "https://github.com/willingc/discuss-nutshell/issues"
+Discussions = "https://github.com/willingc/discuss-nutsshell/discussions"
+Changelog = "https://github.com/willingc/discuss-nutshell/releases"
 
 
 [dependency-groups]
