@@ -904,7 +904,7 @@ wheels = [
 ]
 
 [[package]]
-name = "discuss_nutshell"
+name = "discuss-nutshell"
 source = { editable = "." }
 dependencies = [
     { name = "anthropic" },
@@ -915,7 +915,6 @@ dependencies = [
     { name = "jupyter" },
     { name = "matplotlib" },
     { name = "modal" },
-    { name = "nbstripout" },
     { name = "openai" },
     { name = "pandas" },
     { name = "pyarrow" },
@@ -945,6 +944,7 @@ docs = [
 nb = [
     { name = "ipykernel" },
     { name = "jupyter" },
+    { name = "nbstripout" },
     { name = "pandas" },
 ]
 test = [
@@ -963,7 +963,6 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.7" },
     { name = "modal", specifier = ">=1.2.4" },
-    { name = "nbstripout", specifier = ">=0.8.2" },
     { name = "openai", specifier = ">=2.8.1" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "pyarrow", specifier = ">=22.0.0" },
@@ -993,6 +992,7 @@ docs = [
 nb = [
     { name = "ipykernel" },
     { name = "jupyter" },
+    { name = "nbstripout", specifier = ">=0.8.2" },
     { name = "pandas" },
 ]
 test = [
