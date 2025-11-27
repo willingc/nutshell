@@ -46,6 +46,9 @@ dependencies = [
     "google-genai>=1.52.0",
 ]
 
+[project.scripts]
+discuss-nutshell = "discuss_nutshell.cli:main"
+
 [project.urls]
 Homepage = "https://github.com/willingc/discuss-nutshell"
 "Bug Tracker" = "https://github.com/willingc/discuss-nutshell/issues"
