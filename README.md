@@ -2,11 +2,9 @@
 
 [![Actions Status][actions-badge]][actions-link]
 [![Documentation Status][rtd-badge]][rtd-link]
-
 [![PyPI version][pypi-version]][pypi-link]
 [![Conda-Forge][conda-badge]][conda-link]
 [![PyPI platforms][pypi-platforms]][pypi-link]
-
 [![GitHub Discussion][github-discussions-badge]][github-discussions-link]
 
 <!-- prettier-ignore-start -->
@@ -63,20 +61,23 @@ Use a simple Gradio UI to interface with the user.
 
 ## Next phases
 
-Authors, date/time, post number, uuid post, core dev (bool), cooked message,
-summarized message
+Data to keep: Authors, date/time, post number, uuid post, core dev (bool),
+cooked message, summarized message
 
-- Does this message support or refute the PEP?
+Possible prompts
+
+- Does this message support or refute the proposed PEP?
 - What are key topics found in the message
 - How many times has a person posted
+- You are a Python expert. Summarize this message.
+- You are an intermediate Python user. Summarize this message.
+- You are a manager not a developer. Summarize this message.
 
 Report on pros and cons of the PEP proposal.
 
-- Embeddings
-- Vector database like chroma
-- chunks
+Query in 10 message chunks and summarize.
 
-Query with chunks and prompt
-
-Create a visual display of individual posts, summaries, author, and date posted.
-Display the summaries but allow the original post text to be accessed easily.
+- Create a visual display of individual posts, summaries, author, and date
+  posted.
+- Display the summaries but allow the original post text to be accessed easily.
+- Plot a sentiment of messages over time.
