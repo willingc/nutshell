@@ -31,9 +31,9 @@ few hours or days. These long threads makes it difficult to understand the
 conversation without spending one to three hours reading the thread. Discourse
 gives a predicted time to read the thread.
 
-On discuss.python.org, discussion threads about an individual [Python
-Enhancement Proposal](https://peps.python.org], PEP, can get very long. To
-understand the pros and cons of the PEP, reading the thread is needed.
+On discuss.python.org, discussion threads about an individual
+[Python Enhancement Proposal](https://peps.python.org) (PEP), can get very long.
+To understand the pros and cons of the PEP, reading the thread is needed.
 
 ## Motivation
 
