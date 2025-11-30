@@ -26,7 +26,6 @@ current_path = Path.cwd()
 data_path = current_path / "data"
 
 
-# get a topic
 def get_topic(topic, filename):
     """Get a topic from Discourse API and save to JSON file.
 
