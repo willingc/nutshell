@@ -1,29 +1,12 @@
 """Command-line interface for discuss-nutshell."""
 
-import argparse
-import json
-import os
-import sys
 from pathlib import Path
 
-import requests
 import typer
 from google import genai
 
 from discuss_nutshell.data_loader import load_topic
 from discuss_nutshell.data_logger import init_db, log_interaction
-from discuss_nutshell.preprocessor import (
-    clean_cooked_posts,
-    create_dataframe,
-    drop_columns,
-    extract_posts,
-    format_created_at,
-    read_json,
-    write_post_files,
-    write_posts_json,
-    write_posts_txt,
-)
-from discuss_nutshell.utils import display_dataframe
 from discuss_nutshell.visualize import create_visualization_app
 
 app = typer.Typer()
@@ -118,63 +101,6 @@ def load(
 ) -> None:
     """Load a Discourse topic."""
     load_topic(topic_id, output, process, verbose)
-
-
-def cmd_load(args: argparse.Namespace) -> None:
-    """Handle the load command.
-
-    Parameters
-    ----------
-    args : argparse.Namespace
-        Parsed command-line arguments containing topic_id and optional output path.
-    """
-    token = os.environ.get("DISCOURSE_API_KEY")
-    if not token:
-        print(
-            "Error: DISCOURSE_API_KEY environment variable not set",
-            file=sys.stderr,
-        )
-        sys.exit(1)
-
-    output_path = Path(args.output) if args.output else data_path
-    output_path.mkdir(parents=True, exist_ok=True)
-
-    file_path = output_path / f"topic_{args.topic_id}.json"
-
-    try:
-        print(f"Loading topic {args.topic_id} from Discourse...")
-        load_topic(args.topic_id, file_path)
-
-        if args.process:
-            print("Processing posts...")
-            data = read_json(file_path)
-            posts = extract_posts(data)
-
-            df = create_dataframe(posts)
-            df = drop_columns(df)
-            df = format_created_at(df)
-            df = clean_cooked_posts(df)
-
-            if args.verbose:
-                display_dataframe(df)
-
-            print("Writing post files...")
-            write_post_files(df, output_path)
-            write_posts_json(df, args.topic_id, output_path)
-            write_posts_txt(df, output_path)
-            print(f"Processing complete. Files written to {output_path}")
-
-        print(f"Topic data saved to {file_path}")
-    except (
-        requests.RequestException,
-        json.JSONDecodeError,
-        OSError,
-        ValueError,
-        TypeError,
-        KeyError,
-    ) as e:
-        print(f"Error loading topic: {e}", file=sys.stderr)
-        sys.exit(1)
 
 
 def main() -> None:
