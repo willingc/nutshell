@@ -39,6 +39,7 @@ dependencies = [
     "openai>=2.8.1",
     "anthropic>=0.74.1",
     "google-genai>=1.52.0",
+    "typer>=0.20.0",
 ]
 
 [project.scripts]

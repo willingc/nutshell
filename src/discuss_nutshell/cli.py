@@ -3,14 +3,14 @@
 import argparse
 import json
 import os
-import sqlite3
 import sys
 from pathlib import Path
 
 import requests
+import typer
 from google import genai
 
-from discuss_nutshell.data_loader import get_topic
+from discuss_nutshell.data_loader import load_topic
 from discuss_nutshell.data_logger import init_db, log_interaction
 from discuss_nutshell.preprocessor import (
     clean_cooked_posts,
@@ -25,6 +25,8 @@ from discuss_nutshell.preprocessor import (
 )
 from discuss_nutshell.utils import display_dataframe
 from discuss_nutshell.visualize import create_visualization_app
+
+app = typer.Typer()
 
 current_path = Path.cwd()
 data_path = current_path / "data"
@@ -96,42 +98,26 @@ def query_file(file: str | Path, query: str, model: str = "gemini-2.5-flash") ->
     return response_text
 
 
-def cmd_query(args: argparse.Namespace) -> None:
-    """Handle the query command.
-
-    Parameters
-    ----------
-    args : argparse.Namespace
-        Parsed command-line arguments containing file and query.
-    """
-    try:
-        response = query_file(args.file, args.query, args.model)
-        print(response)
-    except FileNotFoundError as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-    except (OSError, sqlite3.Error, ValueError, TypeError, KeyError) as e:
-        print(f"Error querying file: {e}", file=sys.stderr)
-        sys.exit(1)
+@app.command()
+def query(file: str, query: str, model: str = "gemini-2.5-flash") -> None:
+    """Query a file."""
+    response = query_file(file, query, model)
+    print(response)
 
 
-def cmd_visualize(args: argparse.Namespace) -> None:
-    """Handle the visualize command.
+@app.command()
+def visualize(json_file: str = "104906_all_posts.json") -> None:
+    """Visualize Discourse posts as cards."""
+    app = create_visualization_app(json_file)
+    app.launch()
 
-    Parameters
-    ----------
-    args : argparse.Namespace
-        Parsed command-line arguments containing json_file.
-    """
-    try:
-        app = create_visualization_app(args.json_file)
-        app.launch()
-    except FileNotFoundError as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-    except (OSError, json.JSONDecodeError, ValueError, TypeError, KeyError) as e:
-        print(f"Error loading visualization: {e}", file=sys.stderr)
-        sys.exit(1)
+
+@app.command()
+def load(
+    topic_id: int, output: str = "data", process: bool = False, verbose: bool = False
+) -> None:
+    """Load a Discourse topic."""
+    load_topic(topic_id, output, process, verbose)
 
 
 def cmd_load(args: argparse.Namespace) -> None:
@@ -157,7 +143,7 @@ def cmd_load(args: argparse.Namespace) -> None:
 
     try:
         print(f"Loading topic {args.topic_id} from Discourse...")
-        get_topic(args.topic_id, file_path)
+        load_topic(args.topic_id, file_path)
 
         if args.process:
             print("Processing posts...")
@@ -191,103 +177,10 @@ def cmd_load(args: argparse.Namespace) -> None:
         sys.exit(1)
 
 
-def create_parser() -> argparse.ArgumentParser:
-    """Create and configure the argument parser.
-
-    Returns
-    -------
-    argparse.ArgumentParser
-        Configured argument parser with all subcommands and options.
-    """
-    parser = argparse.ArgumentParser(
-        description="Query Discourse threads and summarize posts",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-    )
-    subparsers = parser.add_subparsers(dest="command", help="Available commands")
-
-    # Query command
-    query_parser = subparsers.add_parser("query", help="Query a file using Gemini API")
-    query_parser.add_argument(
-        "file",
-        type=str,
-        help="Path to the file to query",
-    )
-    query_parser.add_argument(
-        "query",
-        type=str,
-        help="Question or query about the file content",
-    )
-    query_parser.add_argument(
-        "--model",
-        type=str,
-        default="gemini-2.5-flash",
-        help="Gemini model to use (default: gemini-2.5-flash)",
-    )
-
-    # Load command
-    load_parser = subparsers.add_parser(
-        "load", help="Load a Discourse topic from the API"
-    )
-    load_parser.add_argument(
-        "topic_id",
-        type=int,
-        help="ID of the Discourse topic to load",
-    )
-    load_parser.add_argument(
-        "--output",
-        type=str,
-        help="Output directory for saved files (default: ./data)",
-    )
-    load_parser.add_argument(
-        "--process",
-        action="store_true",
-        help="Process and clean the loaded topic data",
-    )
-    load_parser.add_argument(
-        "--verbose",
-        action="store_true",
-        help="Show verbose output during processing",
-    )
-
-    # Visualize command
-    visualize_parser = subparsers.add_parser(
-        "visualize", help="Visualize Discourse posts as cards"
-    )
-    visualize_parser.add_argument(
-        "json_file",
-        type=str,
-        nargs="?",
-        default=None,
-        help="Path to JSON file with posts (default: ./data/104906_all_posts.json)",
-    )
-
-    return parser
-
-
 def main() -> None:
-    """Main entry point for the CLI."""
+    """Discuss Nutshell CLI."""
     init_db()
-    parser = create_parser()
-    args = parser.parse_args()
-
-    if not args.command:
-        parser.print_help()
-        sys.exit(1)
-
-    if args.command == "query":
-        cmd_query(args)
-    elif args.command == "load":
-        cmd_load(args)
-    elif args.command == "visualize":
-        if args.json_file is None:
-            json_file = data_path / "104906_all_posts.json"
-        else:
-            json_file = args.json_file
-        args.json_file = json_file
-        cmd_visualize(args)
-    else:
-        parser.print_help()
-        sys.exit(1)
+    app()
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ current_path = Path.cwd()
 data_path = current_path / "data"
 
 
-def get_topic(topic, filename):
+def load_topic(topic, filename):
     """Get a topic from Discourse API and save to JSON file.
 
     Parameters
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     file_path = data_path / f"topic_{TOPIC_ID}.json"
 
     # Write a json file for a topic with all the posts
-    get_topic(TOPIC_ID, file_path)
+    load_topic(TOPIC_ID, file_path)
 
     data = read_json(file_path)
     posts = extract_posts(data)
